@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+
+}
+
+body {
+    background-color: #2A2433;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D46A83;
+    color: #2A2433;
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+header {
+    color: white;
+}
+
+section {
+    color: white;
+
+    div {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            list-style: none;
+
+            iframe {
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.school {
+    ul {
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    p {
+        background-color: white;
+        color: #2A2433;
+    }
+
+
+    .my-iframe {
+        width: 300px;
+        height: 150px;
+    }
+    
+
+}
+
+.short {
+    ul {
+        padding: 1rem 0;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    p {
+        background-color: white;
+        color: #2A2433;
+    }
+}
+
+.other {
+    width: 200px;
+    height: 315px;
+    background-color: #D46A83;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: all ease .3s;
+    color: #2A2433;
+}
+
+.other:hover {
+    background-color: white;
+    color: #2A2433;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    section {
+        color: white;
+
+        div {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+                list-style: none;
+
+                iframe {
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        color: white;
+
+        div {
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                list-style: none;
+
+                iframe {
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+    .my-iframe{
+        width:640px;
+        height:480px; 
+    }
+}
